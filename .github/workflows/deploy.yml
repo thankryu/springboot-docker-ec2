@@ -36,7 +36,7 @@ jobs:
 
     # (3) Maven build (Test 제외)
     - name: Build with Maven
-      run: mvn --batch-mode --update-snapshots package
+      run: mvn clean install
 
     # (4) AWS 인증 (IAM 사용자 Access Key, Secret Key 활용)
     - name: Configure AWS credentials
