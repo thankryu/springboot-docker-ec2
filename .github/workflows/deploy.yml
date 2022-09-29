@@ -19,7 +19,7 @@ permissions:
 jobs:
   deploy:
     name: Deploy
-    runs-on: api2-latest
+    runs-on: ubuntu-latest
     environment: production
 
     steps:
